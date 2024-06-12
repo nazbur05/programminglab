@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming - Naz Burgenbay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Task by Naz Burgenbay</h1>
+        <p>Student ID number: w70963 <br> Course: 2-LID-A-P</p>
+    </header>
+
+    <div class="main">
+        <p>Please enter your information to access the site.</p>
+        <p id="errorMessage" style="color: red; display: none;">Please fill in all of the fields correctly.</p>
+
+        <form id="userForm">
+            <label for="firstName">First Name:</label><br>
+            <input type="text" id="firstName"><br>
+
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" id="lastName"><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="age"><br><br>
+
+            <button type="button" id="submitButton">Submit</button>
+        </form>
+
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- User data -->
+            </tbody>
+        </table>
+        <button id="clearButton">Clear Table</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
