@@ -1,21 +1,32 @@
 .error {
-    border: 2px solid red;
+    border-width: 2px; 
+    border-style: solid; 
+    border-color: #ffaaaa;
+
+    transition: border-color 0.3s ease-in-out;
 }
 
-body, html {
+.error:hover {
+    border-color: antiquewhite;
+}
+
+
+body {
     font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 16px;
     margin: 10%;
-    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-image: url(images/background1.jpg);
+    background-attachment: fixed;
 }
 
 header {
     text-align: center;
     margin-bottom: 20px;
+    color: #35631e;
 }
 
 .main {
@@ -24,9 +35,13 @@ header {
     justify-content: center;
     padding: 20px; 
     box-shadow: 0 0 10px rgba(0,0,0,0.1); 
-    background-color: #ffffff; 
-    border-radius: 10px; 
+    background-color: #66984d;
+    color: antiquewhite;
+    border-radius: 10px;
     box-sizing: border-box; 
+}
+.main h1 {
+    text-align: center;
 }
 
 #errorMessage {
@@ -44,25 +59,27 @@ form label {
 }
 
 input {
+    color: #35631e;
     margin-bottom: 10px;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 2px solid #85b070;
+    background-color: antiquewhite;
     border-radius: 4px;
-    width: calc(100% - 16px);
+    width: calc(100% - 16px); 
 }
 
 button {
     padding: 10px;
     border: none;
     border-radius: 4px;
-    background-color: #007BFF;
-    color: white;
+    background-color: #35631e;
+    color: antiquewhite;
     cursor: pointer;
     margin: 5px 0;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #274e13;
 }
 
 table {
@@ -72,13 +89,10 @@ table {
 }
 
 th, td {
-    border: 1px solid #ddd;
+    color: #66984d;
     padding: 8px;
     text-align: left;
-}
-
-th {
-    background-color: #f2f2f2;
+    background-color: antiquewhite;
 }
 
 #clearButton {
@@ -86,11 +100,21 @@ th {
     padding: 10px;
     border: none;
     border-radius: 4px;
-    background-color: #d9534f;
-    color: white;
+    background-color: #35631e;
+    color: antiquewhite;
     cursor: pointer;
 }
 
 #clearButton:hover {
-    background-color: #c9302c;
+    background-color: #274e13;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
